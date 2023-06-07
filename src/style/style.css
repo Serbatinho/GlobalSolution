@@ -538,4 +538,30 @@
     header nav #interfaceButtonA button span {
       font-size: clamp(8px, 1rem, 30px);
     }
+  
+  }
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main #midContentContainer {
+    width: 85vw;
+    height: auto;
+    margin: 5vh 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2vh 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (min-width: 1360px) {
+    main #midContentContainer {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto;
+      gap: 5vh 5%;
+    }
   }
