@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../js/formContato.js" defer></script>
+  <script src="../js/formCepAuto.js" defer></script>
+
+  <link rel="stylesheet" href="../css/contato/styleContato.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Titillium+Web&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <title>Contato</title>
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <h1 class="logo">Proteção Pesada</h1>
+    </div>
+    <nav>
+      <a id="homeButtonA" href="../../index.html">
+        <button class="stdButton" id="homeButton"><span>Home</span></button>
+      </a>
+      <a href="./agriculturaSustentavel.html">
+        <button class="stdButton"><span>Agricultura Sustentável</span></button>
+      </a>
+      <a href="./inteligenciaArtificial.html">
+        <button class="stdButton"><span>Inteligências Artificiais</span></button>
+      </a>
+      <a href="./cultivoEficiente.html">
+        <button class="stdButton"><span>Cultivo Eficiente</span></button>
+      </a>
+      <a id="interfaceButtonA" href="./projetoInterface.html">
+        <button class="stdButton" id="interfaceButton"><span>Projeto Interface</span></button>
+      </a>
+      <a id="contactButtonA" href="#">
+        <button href="./src/views/contato.html" class="stdButton" id="contactButton"><span>Contato</span></button>
+      </a>
+    </nav>
+    </nav>
+  </header>
+
+  <main>
+    <div id="midContentContainer">
+      <div class="contentContainer">
+        <div class="formContentContainer">
+          <span>Formulario</span>
+          <div><span id="console"></span></div>
+          <form id="contato" name="contato" action="" onsubmit="return validarForm()">
+            <label for="campo1">Nome:</label>
+            <input type="text" min="3" max="20" placeholder="Nome" id="nome" name="nome">
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" min="3" max="50" placeholder="Sobrenome" id="sobrenome" name="sobrenome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="Email" id="email" name="email">
+
+            <label for="telefone">Telefone:</label>
+            <input type="number" placeholder="(00) 0000-0000" id="telefoneValidar" name="telefone">
+
+            <label for="cep">CEP:</label>
+            <input type="text" min="8" max="9" placeholder="00000-000" id="cep" name="cep">
+
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" min="3" max="70" placeholder="Logradouro" id="logradouro" name="logradouro">
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" min="3" max="70" placeholder="Bairro" id="bairro" name="bairro">
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" min="3" max="50" placeholder="Cidade" id="cidade" name="cidade">
+
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+              <option value="">selecionar</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+
+            <label for="complemento">Complemento:</label>
+            <input type="text" max="30" placeholder="Apto 101 Bloco 5" id="complemento" name="complemento">
+
+            <label for="referencia">Referência:</label>
+            <input type="text" max="30" placeholder="Em frente da padaria Belo Pão" id="referencia" name="referencia">
+
+            <label id="mensagemText" for="mensagem">Mensagem:</label>
+            <textarea cols="30" rows="10" placeholder="Texto" id="mensagem" name="mensagem"></textarea>
+
+            <button type="submit" class="stdButton" type="submit" value="Enviar"><span>Enviar</span></button>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      No Copyright &copy 2023, copie à vontade. Design by Proteção Pesada
+    </p>
+
+    <ul>
+      <li id="footerIntegrantes"><span>Integrantes:</span></li>
+      <li><span>550200 - Leonardo Oliveira Esparza</span></li>
+      <li><span>551821 - Lucas Serbato de Barros</span></li>
+      <li><span>552421 - Flavio Sousa Vasconcelos</span></li>
+      <li><span>552368 - Wellington Urcino da Silva</span></li>
+      <li><span>550687 - Phablo Isaias Silva Santos</span></li>
+    </ul>
+
+    <div>
+      <h3 class="logo">Proteção Pesada</h3>
+    </div>
+
+  </footer>
+</body>
+
+</html>
