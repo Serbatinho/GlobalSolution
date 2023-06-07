@@ -385,7 +385,6 @@
       background-size: 120%;
     }
   }
-  
   header {
     background-color: rgba(122, 84, 63, 0.9);
     display: flex;
@@ -406,4 +405,26 @@
     background-color: #bfa882;
     border-radius: 10px 10px 5px 5px;
     box-shadow: 0.2vh 0.1vw 0.265vh 0.025vw rgba(0, 0, 0, 0.5);
+  }
+  header div .logo {
+    color: white;
+  }
+  header div .logo:hover {
+    color: #a5d795;
+  }
+  header nav {
+    width: 80%;
+    min-height: 25vh;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    background-color: #bfa882;
+    padding: 0 3vw;
+    border-radius: 10px 10px 5px 5px;
+    margin: 0 1vw;
+    padding-top: 2vh;
+    gap: 0 2vw;
+    border-top: 1px solid #4f8e44;
   }
