@@ -320,3 +320,68 @@
   * {
     font-family: "Titillium Web", sans-serif;
   }
+
+  .stdButton {
+    max-height: 80%;
+    padding: 1.5vh 1vw;
+    box-sizing: border-box;
+    background-color: rgba(79, 142, 68, 0.2);
+    text-shadow: 0 1.5px 0 black;
+    border: 2.5px solid #4f8e44;
+    border-radius: 3%;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+    box-shadow: 0.2vh 0.1vw 0.265vh 0.025vw rgba(0, 0, 0, 0.5);
+  }
+  .stdButton span {
+    font-size: clamp(12px, 2.7rem, 2vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .stdButton:hover {
+    border: none;
+    background-color: #4f8e44;
+    transition: ease-in-out 0.5s;
+    text-shadow: none;
+  }
+  
+  .logo {
+    border: 2px solid #4f8e44;
+    color: #4f8e44;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 6vh;
+    padding: 2vh 3vw;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+    box-shadow: 0.2vh 0.1vw 0.265vh 0.025vw rgba(0, 0, 0, 0.5);
+  }
+  
+  .logo:hover {
+    filter: blur(0.3px);
+    transition: 0.3s ease-in-out;
+    background-color: rgba(79, 142, 68, 0.1);
+  }
+  
+  body {
+    box-sizing: border-box;
+    background-image: url("../img/backgroundFarm.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #65a2bf;
+    background-size: 400%;
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      background-size: 300%;
+    }
+  }
+  @media (min-width: 1360px) {
+    body {
+      background-size: 120%;
+    }
+  }
