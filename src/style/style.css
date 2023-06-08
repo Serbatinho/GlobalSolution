@@ -657,3 +657,11 @@
     text-align: center;
     font-size: 1.5rem;
   }
+  footer div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer div .logo {
+    font-size: clamp(16px, 3vh, 23px);
+  }
