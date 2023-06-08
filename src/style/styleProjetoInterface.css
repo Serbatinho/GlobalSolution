@@ -588,6 +588,7 @@ main #midContentContainer {
 .contentContainer p {
   font-size: 1.15rem;
   margin: 0 3vw 3vh 3vw;
+  max-width: 80%;
 }
 
 @media (min-width: 1360px) {
