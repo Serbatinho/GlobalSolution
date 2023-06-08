@@ -621,3 +621,23 @@
     padding-bottom: 1vh;
     border-bottom: 1px solid #4f8e44;
   }
+  footer ul {
+    grid-row: 2 span;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #bfa882;
+    list-style-type: none;
+    padding: 1.5vh;
+    border-radius: 10px 10px 5px 5px;
+    gap: 1vh;
+  }
+  footer ul li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #7a543f;
+  }
+  footer ul li span {
+    font-size: 1.2rem;
+    transition: all ease-in-out 0.2s;
+  }
