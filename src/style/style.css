@@ -641,3 +641,8 @@
     font-size: 1.2rem;
     transition: all ease-in-out 0.2s;
   }
+  footer ul li span:hover {
+    font-size: 1.2rem;
+    color: #a5d795;
+    transition: all ease-in-out 0.2s;
+  }
