@@ -607,3 +607,17 @@
       grid-column: 2 span;
     }
   }
+  footer {
+    background-color: rgba(122, 84, 63, 0.93);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 2vh;
+    gap: 1vh 2vw;
+  }
+  footer p {
+    grid-row: 1;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid #4f8e44;
+  }
