@@ -565,3 +565,45 @@
       gap: 5vh 5%;
     }
   }
+
+  .contentContainer {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 5px 5px;
+    background-color: rgba(101, 162, 191, 0.93);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentContainer figure {
+    background-color: #2d608e;
+    border-radius: 3px;
+    margin: 3vh 0;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contentContainer figure img {
+    margin: 3vh 0;
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+  }
+  .contentContainer figure figcaption {
+    margin-bottom: 1vh;
+  }
+  .contentContainer p {
+    font-size: 1.15rem;
+    margin: 0 3vw 3vh 3vw;
+  }
+  
+  @media (min-width: 1360px) {
+    .contentContainer {
+      height: 100%;
+    }
+    .contentContainer:last-child {
+      grid-column: 2 span;
+    }
+  }
