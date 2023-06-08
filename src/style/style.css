@@ -665,3 +665,31 @@
   footer div .logo {
     font-size: clamp(16px, 3vh, 23px);
   }
+  @media (min-width: 768px) {
+    footer {
+      grid-template-columns: 4fr 6fr;
+      grid-template-rows: 20% 80%;
+      padding: 2vh;
+      gap: 1vh 2vw;
+    }
+    footer p {
+      text-align: center;
+      grid-row: 1;
+      grid-column: 2 span;
+      padding-bottom: 1vh;
+      border-bottom: 1px solid #4f8e44;
+    }
+    footer ul {
+      grid-column: 2;
+      grid-row: 2;
+      margin-bottom: 2vh;
+    }
+    footer div {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    footer div .logo {
+      font-size: clamp(16px, 4vh, 27px);
+    }
+  
+  }
